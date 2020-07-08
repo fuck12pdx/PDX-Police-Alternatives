@@ -1,0 +1,125 @@
+* {
+  font-family: 'Lora', serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-color-scheme: dark) {
+  a {
+    color: #F2CC8F;
+    transition: 0.2s;
+  }
+
+  a:hover {
+    color: #EAAC48;
+  }
+
+  .stripe1 {
+    background-color: #202124;
+    color: #f1f1f1;
+  }
+
+  .stripe2 {
+    background-color: #35363A;
+    color: #f1f1f1;
+    }
+
+  .faded {
+    color: #7a7a7a;
+    font-size: 12px;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  a {
+    color: #4ea8de;
+    transition: 0.2s;
+  }
+
+  a:hover {
+    color: #5390d9;
+  }
+
+  .stripe1 {
+    background-color: #f1f1f1;
+    color: #333333;
+  }
+
+  .stripe2 {
+    background-color: #ffffff;
+    color: #333333;
+    }
+
+  .faded {
+    color: #7a7a7a;
+    font-size: 12px;
+  }
+}
+
+.container {
+  padding-top: 30px;
+}
+
+.header {
+  margin-bottom: 30px;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.anchors {
+  flex-wrap: wrap;
+}
+
+.anchors a {
+  padding-right:20px;
+}
+
+.anchors p {
+  margin-bottom: 0;
+}
+
+.nav {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.jump {
+  margin-bottom: 5px;
+}
+
+ul li {
+  margin-left: 20px;
+}
+
+.u-flex-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/*Desktop specific styling*/
+@media (min-width: 550px) {
+  .header {
+    justify-content: space-between;
+  }
+
+  .header h5 {
+    margin-bottom: 0;
+  }
+
+  .row {
+    margin-bottom: 20px;
+  }
+
+  .u-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
